@@ -1,0 +1,19 @@
+{
+  "name": "manablox-service-express",
+  "description": "express.js Server - Service module for manablox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "body-parser": "^1.19.0",
+    "commitizen": "^4.0.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "husky": "^3.1.0",
+    "standard-version": "^7.0.1"
+  }
+}
