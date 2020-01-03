@@ -28,6 +28,10 @@ class ExpressService {
             console.log(`An express server is listening on ${ this.config.ip }:${ this.config.port }`)
         })
     }
+
+    Use(...params){
+        return this.app.use(...params)
+    }
 }
 
 export default ExpressService
