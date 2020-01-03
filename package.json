@@ -1,7 +1,7 @@
 {
   "name": "manablox-service-express",
   "description": "express.js Server - Service module for manablox",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
