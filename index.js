@@ -20,6 +20,8 @@ class ExpressService {
         this.app.use(helmet(this.config.helmet))
         this.app.use(cors(this.config.cors))
         this.app.use(compression(this.config.compression))
+        this.app.use(bodyParser.json(this.config.bodyParser.json))
+        this.app.use(bodyParser.urlencoded(this.config.bodyParser.urlencoded))
     }
 
     Start(){
@@ -32,19 +34,10 @@ class ExpressService {
     Use(...params){
         return this.app.use(...params)
     }
+
+    AutoRoute(folder){
+
+    }
 }
 
 export default ExpressService
-
-// export default (config) => {
-//     const app = express()
-
-//     app.use(helmet(config.helmet))
-//     app.use(cors(config.cors))
-//     app.use(compression(config.compression))
-
-//     app.use(bodyParser.json(config.bodyParser.json))
-//     app.use(bodyParser.urlencoded(config.bodyParser.urlencoded))
-
-//     return app
-// }
