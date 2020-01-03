@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/manablox/manablox-service-express/compare/v1.3.1...v1.4.0) (2020-01-03)
+
+
+### Features
+
+* added options to disable express plugins ([23d7080](https://github.com/manablox/manablox-service-express/commit/23d70804d988ae296c0ad2ae026c3e85d92f6a65))
+
 ### [1.3.1](https://github.com/manablox/manablox-service-express/compare/v1.3.0...v1.3.1) (2020-01-03)
 
 
