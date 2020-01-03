@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/manablox/manablox-service-express/compare/v1.1.0...v1.2.0) (2020-01-03)
+
+
+### Features
+
+* added class export and start function ([887e131](https://github.com/manablox/manablox-service-express/commit/887e13151a321aef0def276a3e984b3c435223f5))
+
 ## [1.1.0](https://github.com/manablox/manablox-service-express/compare/v1.0.4...v1.1.0) (2020-01-03)
 
 
