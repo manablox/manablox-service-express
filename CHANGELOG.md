@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/manablox/manablox-service-express/compare/v1.4.0...v1.4.1) (2020-01-03)
+
+
+### Refactorings
+
+* added basic test ([d9e49e4](https://github.com/manablox/manablox-service-express/commit/d9e49e46c859f77e267d10f9b16229ce6d82ade3))
+
 ## [1.4.0](https://github.com/manablox/manablox-service-express/compare/v1.3.1...v1.4.0) (2020-01-03)
 
 
