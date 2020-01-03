@@ -7,9 +7,9 @@ import compression from 'compression'
 export default (config) => {
     const app = express()
 
-    app.use(helmet.hsts(config.helmet))
+    app.use(helmet(config.helmet))
     app.use(cors(config.cors))
-    app.use(compression())
+    app.use(compression(config.compression))
 
     app.use(bodyParser.json(config.bodyParser.json))
     app.use(bodyParser.urlencoded(config.bodyParser.urlencoded))
