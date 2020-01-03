@@ -1,3 +1,5 @@
+import fs from 'fs'
+import path from 'path'
 import http from 'http'
 import cors from 'cors'
 import helmet from 'helmet'
@@ -17,11 +19,11 @@ class ExpressService {
     Initialize(){
         this.app = express()
 
-        this.app.use(helmet(this.config.helmet))
-        this.app.use(cors(this.config.cors))
-        this.app.use(compression(this.config.compression))
-        this.app.use(bodyParser.json(this.config.bodyParser.json))
-        this.app.use(bodyParser.urlencoded(this.config.bodyParser.urlencoded))
+        if(!this.config.helmet.disabled) this.app.use(helmet(this.config.helmet.options))
+        if(!this.config.cors.disabled) this.app.use(cors(this.config.cors.options))
+        if(!this.config.compression.disabled) this.app.use(compression(this.config.compression.options))
+        if(!this.config.bodyParser.disabled) this.app.use(bodyParser.json(this.config.bodyParser.options.json))
+        if(!this.config.bodyParser.disabled) this.app.use(bodyParser.urlencoded(this.config.bodyParser.options.urlencoded))
     }
 
     Start(){
@@ -35,7 +37,7 @@ class ExpressService {
         return this.app.use(...params)
     }
 
-    AutoRoute(folder){
+    async AutoRoute(folder){
 
     }
 }
