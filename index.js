@@ -1,18 +1,46 @@
+import http from 'http'
 import cors from 'cors'
 import helmet from 'helmet'
 import express from 'express'
 import bodyParser from 'body-parser'
 import compression from 'compression'
 
-export default (config) => {
-    const app = express()
+class ExpressService {
+    constructor(config){
+        this.config = config
+        this.server = null
+        this.app = null
 
-    app.use(helmet(config.helmet))
-    app.use(cors(config.cors))
-    app.use(compression(config.compression))
+        this.Initialize()
+    }
 
-    app.use(bodyParser.json(config.bodyParser.json))
-    app.use(bodyParser.urlencoded(config.bodyParser.urlencoded))
+    Initialize(){
+        this.app = express()
 
-    return app
+        this.app.use(helmet(this.config.helmet))
+        this.app.use(cors(this.config.cors))
+        this.app.use(compression(this.config.compression))
+    }
+
+    Start(){
+        this.server = http.createServer(this.app)
+        this.server.listen(this.config.port, this.config.ip, () => {
+            console.log(`An express server is listening on ${ this.config.ip }:${ this.config.port }`)
+        })
+    }
 }
+
+export default ExpressService
+
+// export default (config) => {
+//     const app = express()
+
+//     app.use(helmet(config.helmet))
+//     app.use(cors(config.cors))
+//     app.use(compression(config.compression))
+
+//     app.use(bodyParser.json(config.bodyParser.json))
+//     app.use(bodyParser.urlencoded(config.bodyParser.urlencoded))
+
+//     return app
+// }
