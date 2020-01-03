@@ -1,5 +1,6 @@
 node_modules
 /build
+/test/build
 yarn.lock
 .env
 tmp
