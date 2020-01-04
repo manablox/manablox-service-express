@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/manablox/manablox-service-express/compare/v1.4.1...v1.5.0) (2020-01-04)
+
+
+### Features
+
+* added more router functionality ([8ea600a](https://github.com/manablox/manablox-service-express/commit/8ea600a5b753a841f4fb436caad5e4b9ffe9324b))
+
 ### [1.4.1](https://github.com/manablox/manablox-service-express/compare/v1.4.0...v1.4.1) (2020-01-03)
 
 
