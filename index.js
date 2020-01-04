@@ -35,6 +35,14 @@ class ExpressService {
         return this.app.use(...params)
     }
 
+    Get(...params){
+        return this.app.get(...params)
+    }
+
+    Post(...params){
+        return this.app.post(...params)
+    }
+
     async AutoRoute(folder){
 
     }
