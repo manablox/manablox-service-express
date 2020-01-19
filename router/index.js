@@ -10,6 +10,8 @@ export default class Router {
             method: routeSettings.method,
             handler: routeSettings.handler
         }
+
+        this.InitRoute(this.routes[routeSettings.url])
     }
 
     AddRoute(routeSettings){
@@ -27,8 +29,10 @@ export default class Router {
             handler: routeSettings.route.handler
         }
 
-        const route = this.routes[url]
+        this.InitRoute(this.routes[url])
+    }
 
+    InitRoute(route){
         if(route.method == 'get') this.app.Get(route.url, route.handler)
         if(route.method == 'post') this.app.Post(route.url, route.handler)
         if(route.method == 'put') this.app.Put(route.url, route.handler)
