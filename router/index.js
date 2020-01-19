@@ -4,6 +4,14 @@ export default class Router {
         this.routes = {}
     }
 
+    AddDynamicRoute(routeSettings){
+        this.routes[routeSettings.url] = {
+            url: routeSettings.url,
+            method: routeSettings.method,
+            handler: routeSettings.handler
+        }
+    }
+
     AddRoute(routeSettings){
         const url = routeSettings.name
             .replace('.', '')
