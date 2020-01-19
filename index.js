@@ -10,8 +10,13 @@ class ExpressService {
         this.config = config
         this.server = null
         this.app = null
+        this.logger = null
 
         this.Initialize()
+    }
+
+    SetLogger(logger){
+
     }
 
     Initialize(){
@@ -49,10 +54,6 @@ class ExpressService {
 
     Delete(...params){
         return this.app.delete(...params)
-    }
-
-    async AutoRoute(folder){
-
     }
 }
 
