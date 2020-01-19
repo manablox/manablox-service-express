@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.3](https://github.com/manablox/manablox-service-express/compare/v1.6.2...v1.6.3) (2020-01-19)
+
+
+### Bug Fixes
+
+* fixed ignored dynamic added routes ([3def512](https://github.com/manablox/manablox-service-express/commit/3def5126e00e7d6a4c3f6599459dfe26b83d1750))
+
 ### [1.6.2](https://github.com/manablox/manablox-service-express/compare/v1.6.1...v1.6.2) (2020-01-19)
 
 ### [1.6.1](https://github.com/manablox/manablox-service-express/compare/v1.6.0...v1.6.1) (2020-01-19)
