@@ -53,7 +53,8 @@ class ExpressService {
             autoroute,
             helmet,
             cors,
-            compression
+            compression,
+            bodyParser
         }
 
         this.server = null
