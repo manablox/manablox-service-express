@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.4](https://github.com/manablox/manablox-service-express/compare/v1.6.3...v1.6.4) (2020-01-25)
+
+
+### Refactorings
+
+* added default config ([6a7c8ee](https://github.com/manablox/manablox-service-express/commit/6a7c8eeac2aa11513b42e2eff34d724031bd85ce))
+
 ### [1.6.3](https://github.com/manablox/manablox-service-express/compare/v1.6.2...v1.6.3) (2020-01-19)
 
 
