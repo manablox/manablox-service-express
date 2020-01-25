@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.6](https://github.com/manablox/manablox-service-express/compare/v1.6.5...v1.6.6) (2020-01-25)
+
+
+### Bug Fixes
+
+* forgotten bodyParser config ([5f412f0](https://github.com/manablox/manablox-service-express/commit/5f412f0de7bdd9d8feaaf4bf0094ac888c35d106))
+
 ### [1.6.5](https://github.com/manablox/manablox-service-express/compare/v1.6.4...v1.6.5) (2020-01-25)
 
 
