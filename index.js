@@ -49,13 +49,13 @@ class ExpressService {
     }){
         this.config = {
             ip,
-            host,
+            port,
             autoroute,
             helmet,
             cors,
             compression
         }
-        
+
         this.server = null
         this.app = null
         this.logger = null
