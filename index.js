@@ -6,8 +6,56 @@ import bodyParser from 'body-parser'
 import compression from 'compression'
 
 class ExpressService {
-    constructor(config){
-        this.config = config
+    constructor({
+        ip = '127.0.0.1',
+        port = 3000,
+
+        autoroute = 'routes',
+
+        helmet = {
+            disabled: false,
+            options: {
+                hsts: {
+                    maxAge: 60 * 60 * 2,
+                    includeSubDomains: false
+                }
+            }
+        },
+
+        cors = {
+            disabled: false,
+            options: {
+                origin: '*',
+                optionsSuccessStatus: 200
+            }
+        },
+
+        bodyParser = {
+            disabled: false,
+            options: {
+                json: {
+                    limit: '64mb'
+                },
+                urlencoded: {
+                    extended: true
+                }
+            }
+        },
+
+        compression = {
+            disabled: false,
+            options: {}
+        }
+    }){
+        this.config = {
+            ip,
+            host,
+            autoroute,
+            helmet,
+            cors,
+            compression
+        }
+        
         this.server = null
         this.app = null
         this.logger = null
